@@ -1,0 +1,45 @@
+# RealTerrain Studio - Development Dependencies
+# Additional packages needed for development, testing, and documentation
+# Install with: pip install -r requirements-dev.txt
+
+# First, install core dependencies
+-r requirements.txt
+
+# ============================================
+# Testing Frameworks
+# ============================================
+pytest==7.4.3            # Testing framework
+pytest-cov==4.1.0        # Coverage reporting
+pytest-mock==3.12.0      # Mocking for tests
+pytest-qt==4.2.0         # Qt testing utilities
+
+# ============================================
+# Code Quality
+# ============================================
+black==23.12.1           # Code formatter
+flake8==6.1.0            # Linting
+mypy==1.7.1              # Type checking
+pylint==3.0.3            # Additional linting
+
+# Type stubs for better type checking
+types-requests==2.31.0.10
+
+# ============================================
+# Documentation
+# ============================================
+sphinx==7.2.6            # Documentation generator
+sphinx-rtd-theme==2.0.0  # ReadTheDocs theme
+sphinx-autodoc-typehints==1.25.2  # Type hints in docs
+
+# ============================================
+# Development Tools
+# ============================================
+ipython==8.18.1          # Enhanced Python shell
+ipdb==0.13.13            # Debugger
+pre-commit==3.6.0        # Git hooks for code quality
+
+# ============================================
+# Version Information
+# ============================================
+# Last updated: 2024-12-08
+# Python: 3.9 - 3.13

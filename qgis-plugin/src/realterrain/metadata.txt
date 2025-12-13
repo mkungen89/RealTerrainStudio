@@ -1,0 +1,47 @@
+# RealTerrain Studio - QGIS Plugin Metadata
+# This file tells QGIS about the plugin
+
+[general]
+name=RealTerrain Studio
+qgisMinimumVersion=3.22
+qgisMaximumVersion=3.99
+description=Export real-world terrain to Unreal Engine 5
+version=0.1.0
+author=RealTerrain Studio
+email=support@realterrainstudio.com
+
+about=RealTerrain Studio transforms real-world geodata into game-ready terrain for Unreal Engine 5. Export elevation data, satellite imagery, roads, buildings, and vegetation from anywhere on Earth.
+
+tracker=https://github.com/yourusername/RealTerrainStudio/issues
+repository=https://github.com/yourusername/RealTerrainStudio
+homepage=https://realterrainstudio.com
+
+# Tags for QGIS plugin repository
+tags=terrain,unreal,engine,export,elevation,srtm,osm,game,development
+
+# Category in QGIS plugin manager
+category=Plugins
+
+# Changelog
+changelog=
+    0.1.0 - Initial development version
+    - Project structure initialized
+    - Plugin skeleton created
+
+# Icon (relative path from this file)
+icon=icon.png
+
+# Experimental flag
+experimental=True
+
+# Deprecated flag
+deprecated=False
+
+# External dependencies (if any)
+external_deps=
+
+# Server settings (for QGIS plugin repository)
+server=False
+
+# Has processing provider
+hasProcessingProvider=no

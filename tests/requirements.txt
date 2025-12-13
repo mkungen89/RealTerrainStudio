@@ -1,0 +1,25 @@
+# Testing dependencies for RealTerrain Studio
+
+# Core testing framework
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.1
+pytest-xdist>=3.3.1  # Parallel test execution
+
+# Test utilities
+Pillow>=10.0.0  # Image processing for tests
+numpy>=1.24.0  # Array operations
+
+# Mocking and fixtures
+responses>=0.23.1  # Mock HTTP responses
+faker>=19.2.0  # Generate fake test data
+
+# Performance testing
+pytest-benchmark>=4.0.0
+
+# Code quality
+pytest-flake8>=1.1.1
+pytest-black>=0.3.12
+
+# Coverage reporting
+coverage[toml]>=7.2.7

@@ -1,0 +1,66 @@
+# RealTerrain Studio - QGIS Plugin Dependencies
+# Core runtime dependencies for the QGIS plugin
+# Python 3.9+ | QGIS 3.22+
+
+# ============================================
+# IMPORTANT NOTES
+# ============================================
+# - GDAL and PyQt5 are provided by QGIS itself
+# - Only install additional packages needed by the plugin
+# - For development dependencies, see requirements-dev.txt
+
+# ============================================
+# HTTP & API Communication
+# ============================================
+requests==2.31.0         # HTTP library for data fetching
+urllib3==2.0.7           # HTTP client (required by requests)
+
+# ============================================
+# Data Sources
+# ============================================
+overpy==0.7              # Overpass API client for OpenStreetMap
+# osmapi==3.1.0          # OSM API (optional, for advanced features)
+
+# ============================================
+# Backend Communication
+# ============================================
+supabase==2.3.0          # Supabase Python client
+postgrest==0.13.2        # PostgreSQL REST API client
+realtime==1.0.5          # Supabase realtime (dependency)
+gotrue==2.3.0            # Supabase auth (dependency)
+httpx==0.25.2            # Async HTTP client (supabase dependency)
+
+# ============================================
+# Security & Authentication
+# ============================================
+python-dotenv==1.0.0     # Environment variables from .env files
+cryptography==41.0.7     # Encryption for license keys
+PyJWT==2.8.0            # JWT token handling
+
+# ============================================
+# Image Processing
+# ============================================
+Pillow==10.1.0          # Image processing for textures
+
+# ============================================
+# Geospatial Data
+# ============================================
+# NOTE: numpy, GDAL, and rasterio are provided by QGIS
+# Only install if running standalone tests outside QGIS
+# numpy==1.26.2
+# GDAL==3.8.0
+# rasterio==1.3.9
+
+# ============================================
+# Data Formats
+# ============================================
+h5py==3.10.0            # HDF5 file format (some SRTM data)
+# netCDF4==1.6.5        # NetCDF format (optional, for some sources)
+
+# ============================================
+# Version Information
+# ============================================
+# Last updated: 2024-12-08
+# Python: 3.9 - 3.13
+# QGIS: 3.22+
+# Platform: Windows, Mac, Linux

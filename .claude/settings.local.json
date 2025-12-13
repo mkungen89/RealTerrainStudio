@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(python -m venv:*)",
+      "Bash(venv/Scripts/python.exe:*)",
+      "Bash(venv/Scripts/pip.exe:*)",
+      "Bash(python -m pip install:*)",
+      "Bash(python test_connection.py:*)",
+      "Bash(python run_migrations.py:*)",
+      "Bash(python run_migrations_api.py:*)",
+      "Bash(python test_satellite_export.py:*)",
+      "Bash(python -m pip list:*)",
+      "Bash(venvScriptspython.exe -m pip list)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Build\\BatchFiles\\Build.bat\" ProjectXEditor Win64 Development \"C:\\Users\\Mikael\\Documents\\Unreal Projects\\ProjectX\\ProjectX.uproject\" -waitmutex)",
+      "Bash(\"C:\\Program Files\\Epic Games\\UE_5.7\\Engine\\Build\\BatchFiles\\Build.bat\" ProjectXEditor Win64 Development \"C:\\Users\\Mikael\\Documents\\Unreal Projects\\ProjectX\\ProjectX.uproject\" -waitmutex)",
+      "Bash(xcopy:*)",
+      "Bash(robocopy:*)",
+      "Bash(Build.bat ProjectXEditor Win64 Development \"C:\\Users\\Mikael\\Documents\\Unreal Projects\\ProjectX\\ProjectX.uproject\" -waitmutex)",
+      "Bash(cmd /c \"\"C:Program FilesEpic GamesUE_5.7EngineBuildBatchFilesBuild.bat\" ProjectXEditor Win64 Development \"C:UsersMikaelDocumentsUnreal ProjectsProjectXProjectX.uproject\" -waitmutex\")",
+      "Bash(cmd /c \"dir /B C:\\RealTerrainStudio\\backend\")",
+      "Bash(npm audit:*)",
+      "Bash(npm install)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

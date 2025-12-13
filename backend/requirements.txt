@@ -1,0 +1,20 @@
+# RealTerrain Studio - Backend Dependencies
+# Python packages for backend scripts and testing
+
+# ============================================
+# Core Dependencies
+# ============================================
+supabase==2.3.0          # Supabase Python client
+python-dotenv==1.0.0     # Environment variables
+requests==2.31.0         # HTTP library
+
+# ============================================
+# Database
+# ============================================
+psycopg2-binary==2.9.9   # PostgreSQL adapter (for direct DB access)
+
+# ============================================
+# Version Information
+# ============================================
+# Last updated: 2024-12-08
+# Python: 3.9+
