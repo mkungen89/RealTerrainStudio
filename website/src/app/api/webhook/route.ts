@@ -3,6 +3,9 @@ import { stripe } from '@/lib/stripe'
 import { supabase } from '@/lib/supabase'
 import Stripe from 'stripe'
 
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
+
 // Generate a random license key
 function generateLicenseKey(): string {
   const segments = []
