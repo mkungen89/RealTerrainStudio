@@ -1,19 +1,5 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient, SupabaseClient } from '@supabase/supabase-js'
 import { createBrowserClient } from '@supabase/ssr'
-
-// Supabase client for server-side usage
-export const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
-
-// Supabase client for client-side usage in components
-export const createSupabaseClient = () => {
-  return createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  )
-}
 
 // Types for database tables
 export type Database = {
@@ -101,7 +87,7 @@ export type Database = {
           id: string
           user_id: string
           license_id: string
-          bounds: any // JSON object
+          bounds: any
           profile: string
           file_size: number
           created_at: string
@@ -123,4 +109,23 @@ export type Database = {
       }
     }
   }
+}
+
+// Supabase client for server-side usage
+// Using non-null assertion because these will be available at runtime
+export const supabase = createClient<Database>(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+)
+
+// Supabase client for client-side usage in components
+export const createSupabaseClient = () => {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+
+  if (!url || !key) {
+    throw new Error('Supabase environment variables not configured')
+  }
+
+  return createBrowserClient(url, key)
 }
